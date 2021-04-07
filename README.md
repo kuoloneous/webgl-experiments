@@ -11,9 +11,6 @@
 - Enzyme
 
 
-## A/B Testing
-- Optimizely
-
 ## Logging
 - 
 
