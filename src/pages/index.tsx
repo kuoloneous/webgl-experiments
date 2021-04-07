@@ -1,8 +1,8 @@
 import React from 'react';
 import Head from 'next/head';
-
+import Link from 'next/link';
 import {
-  Container, Grid, Card, CardContent, Box,
+  Container, Grid, Card, CardContent, Box, Link as MuiLink,
 } from '@material-ui/core';
 
 interface Props {
@@ -19,43 +19,53 @@ function HomePage() {
       <Box paddingTop={3}>
         <Container>
           <Grid container spacing={3}>
-            <Grid item>
+            <Grid item xs={12}>
               <Card>
                 <CardContent>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-                  ea maiores reiciendis. Quod earum exercitationem esse vitae ad tenetur
-                  laborum labore fugit vel laudantium veniam, beatae ducimus,
-                  voluptas debitis! Voluptate?
-                </CardContent>
-              </Card>
-            </Grid>
-            <Grid item>
-              <Card>
-                <CardContent>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-                  ea maiores reiciendis. Quod earum exercitationem esse vitae ad tenetur
-                  laborum labore fugit vel laudantium veniam, beatae ducimus,
-                  voluptas debitis! Voluptate?
-                </CardContent>
-              </Card>
-            </Grid>
-            <Grid item>
-              <Card>
-                <CardContent>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-                  ea maiores reiciendis. Quod earum exercitationem esse vitae ad tenetur
-                  laborum labore fugit vel laudantium veniam, beatae ducimus,
-                  voluptas debitis! Voluptate?
-                </CardContent>
-              </Card>
-            </Grid>
-            <Grid item>
-              <Card>
-                <CardContent>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-                  ea maiores reiciendis. Quod earum exercitationem esse vitae ad tenetur
-                  laborum labore fugit vel laudantium veniam, beatae ducimus,
-                  voluptas debitis! Voluptate?
+                  <ul>
+                    <li>
+                      <Link href="/animations/cube">
+                        <MuiLink>
+                          Cube
+                        </MuiLink>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/animations/character">
+                        <MuiLink>
+                          Character
+                        </MuiLink>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/animations/car">
+                        <MuiLink>
+                          Car
+                        </MuiLink>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/animations/diamond-shibas">
+                        <MuiLink>
+                          Diamond Shibas
+                        </MuiLink>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/animations/diamond-lv">
+                        <MuiLink>
+                          Diamond LV
+                        </MuiLink>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/animations/backlit-vehicle">
+                        <MuiLink>
+                          Vehicle Showroom
+                        </MuiLink>
+                      </Link>
+                    </li>
+                  </ul>
                 </CardContent>
               </Card>
             </Grid>

@@ -5,14 +5,13 @@ import { AppProps } from 'next/app';
 import { createGenerateClassName, StylesProvider, ThemeProvider } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Head from 'next/head';
-import { useRouter } from 'next/router';
 
 import Theme from '../utils/theme';
 import Layout from '../components/layout';
 
 
 const generateClassName = createGenerateClassName({
-  productionPrefix: 'canoojss-',
+  productionPrefix: 'jss-',
 });
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
