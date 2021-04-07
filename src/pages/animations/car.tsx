@@ -44,7 +44,6 @@ function Lambo() {
   );
 }
 
-
 function CarPage() {
   return (
     <>
@@ -56,7 +55,13 @@ function CarPage() {
         <Canvas shadowMap camera={{ position: [0, 0, 15] }}>
           <Suspense fallback={<Loading />}>
             <ambientLight intensity={0.5} />
-            <spotLight intensity={0.6} position={[30, 30, 50]} angle={0.2} penumbra={1} castShadow />
+            <spotLight
+              intensity={0.6}
+              position={[30, 30, 50]}
+              angle={0.2}
+              penumbra={1}
+              castShadow
+            />
             <Lambo />
             <mesh receiveShadow>
               <planeBufferGeometry attach="geometry" args={[1000, 1000]} />
