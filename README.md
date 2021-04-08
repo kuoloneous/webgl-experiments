@@ -1,4 +1,4 @@
-# Sauron Front End
+# WebGL Front End
 
 ## UI Frameworks
 - React
